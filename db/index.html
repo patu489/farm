@@ -1,0 +1,36 @@
+<section id="inventory" class="hidden">
+    <h2>Inventory Management</h2>
+    <form id="inventoryForm" action="backend/inventory.php" method="POST">
+        <label for="chickenCount">Chicken Count:</label>
+        <input type="number" id="chickenCount" name="chickenCount" required>
+        <label for="feedStock">Feed Stock (kg):</label>
+        <input type="number" id="feedStock" name="feedStock" required>
+        <label for="medicationStock">Medication Stock (units):</label>
+        <input type="number" id="medicationStock" name="medicationStock" required>
+        <button type="submit">Update Inventory</button>
+    </form>
+</section>
+
+<section id="production" class="hidden">
+    <h2>Production Tracking</h2>
+    <form id="productionForm" action="backend/production.php" method="POST">
+        <label for="eggCount">Egg Count:</label>
+        <input type="number" id="eggCount" name="eggCount" required>
+        <label for="meatProduced">Meat Produced (kg):</label>
+        <input type="number" id="meatProduced" name="meatProduced" required>
+        <button type="submit">Record Production</button>
+    </form>
+</section>
+
+<section id="sales" class="hidden">
+    <h2>Sales Management</h2>
+    <form id="salesForm" action="backend/sales.php" method="POST">
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required>
+        <label for="quantity">Quantity Sold:</label>
+        <input type="number" id="quantity" name="quantity" required>
+        <label for="totalPrice">Total Price ($):</label>
+        <input type="number" id="totalPrice" name="totalPrice" required>
+        <button type="submit">Record Sale</button>
+    </form>
+</section>

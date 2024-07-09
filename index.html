@@ -1,0 +1,67 @@
+<!-- 
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poultry Farm Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Poultry Farm Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('inventory')">Inventory Management</a></li>
+            <li><a href="#" onclick="showSection('production')">Production Tracking</a></li>
+            <li><a href="#" onclick="showSection('sales')">Sales Management</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="inventory" class="hidden">
+            <h2>Inventory Management</h2>
+            <form id="inventoryForm">
+                <label for="chickenCount">Chicken Count:</label>
+                <input type="number" id="chickenCount" name="chickenCount" required>
+                <label for="feedStock">Feed Stock (kg):</label>
+                <input type="number" id="feedStock" name="feedStock" required>
+                <label for="medicationStock">Medication Stock (units):</label>
+                <input type="number" id="medicationStock" name="medicationStock" required>
+                <button type="submit">Update Inventory</button>
+            </form>
+        </section>
+        <section id="production" class="hidden">
+            <h2>Production Tracking</h2>
+            <form id="productionForm">
+                <label for="eggCount">Egg Count:</label>
+                <input type="number" id="eggCount" name="eggCount" required>
+                <label for="meatProduced">Meat Produced (kg):</label>
+                <input type="number" id="meatProduced" name="meatProduced" required>
+                <button type="submit">Record Production</button>
+            </form>
+        </section>
+        <section id="sales" class="hidden">
+            <h2>Sales Management</h2>
+            <form id="salesForm">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" name="customerName" required>
+                <label for="quantity">Quantity Sold:</label>
+                <input type="number" id="quantity" name="quantity" required>
+                <label for="totalPrice">Total Price ($):</label>
+                <input type="number" id="totalPrice" name="totalPrice" required>
+                <button type="submit">Record Sale</button>
+            </form>
+        </section>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
